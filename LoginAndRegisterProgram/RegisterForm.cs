@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Logic;
 
 namespace LoginAndRegisterProgram
 {
@@ -15,6 +16,14 @@ namespace LoginAndRegisterProgram
         public RegisterForm()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            User user = new User();
+            user.Username = txtNewuser.Text;
+            user.Password = txtNewuserPassword.Text;            
+
         }
     }
 }

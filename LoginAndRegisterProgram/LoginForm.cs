@@ -16,5 +16,10 @@ namespace LoginAndRegisterProgram
         {
             InitializeComponent();
         }
+
+        private void registernewLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new RegisterForm().Show();
+        }
     }
 }
